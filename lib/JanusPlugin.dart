@@ -480,7 +480,7 @@ class JanusPlugin {
       if (webRTCHandle!.peerConnection!.getLocalStreams().length > 0) {
         videoTrack = webRTCHandle!.peerConnection!
             .getLocalStreams()
-            .first!
+            .first
             .getVideoTracks()
             .firstWhere((track) => track.kind == "video");
         return await Helper.switchCamera(videoTrack);
