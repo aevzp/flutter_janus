@@ -110,7 +110,7 @@ class RTCIceServer {
     return {
       'username': this.username,
       'credential': this.credential,
-      'url': this.url,
+      'urls': this.url,
     };
   }
 
